@@ -47,7 +47,7 @@ export default function Home() {
             <button onClick={() => setActiveTab("overview")} className={`hover:text-[#D96C4A] transition-colors ${activeTab === "overview" ? "text-[#D96C4A] underline decoration-2 underline-offset-4" : "text-[#3A4F3C]"}`}>Overview</button>
             <button onClick={() => setActiveTab("empathy")} className={`hover:text-[#D96C4A] transition-colors ${activeTab === "empathy" ? "text-[#D96C4A] underline decoration-2 underline-offset-4" : "text-[#3A4F3C]"}`}>Empathy Map</button>
             <button onClick={() => setActiveTab("questions")} className={`hover:text-[#D96C4A] transition-colors ${activeTab === "questions" ? "text-[#D96C4A] underline decoration-2 underline-offset-4" : "text-[#3A4F3C]"}`}>Interviews</button>
-            <button onClick={() => setActiveTab("hmw")} className={`hover:text-[#D96C4A] transition-colors ${activeTab === "hmw" ? "text-[#D96C4A] underline decoration-2 underline-offset-4" : "text-[#3A4F3C]"}`}>Refined HMW</button>
+            <button onClick={() => setActiveTab("hmw")} className={`hover:text-[#D96C4A] transition-colors ${activeTab === "hmw" ? "text-[#D96C4A] underline decoration-2 underline-offset-4" : "text-[#3A4F3C]"}`}>How Might We?</button>
           </nav>
           <div className="flex gap-3">
             <a href="manus-slides://KJV1JbKhu4IYYCjzFV91d3" className="inline-flex items-center justify-center px-4 py-2 border border-[#2C402E] text-xs font-bold uppercase tracking-wider text-[#2C402E] hover:bg-[#2C402E] hover:text-[#FDFDFB] transition-all duration-200">
@@ -126,7 +126,7 @@ export default function Home() {
               Empathy Interviews
             </TabsTrigger>
             <TabsTrigger value="hmw" className="border-b-2 border-transparent data-[state=active]:border-[#2C402E] data-[state=active]:text-[#2C402E] text-sm font-bold uppercase tracking-wider rounded-none pb-4 px-1 bg-transparent hover:text-[#D96C4A] transition-all">
-              Refined HMW Statement
+              How Might We?
             </TabsTrigger>
           </TabsList>
 
