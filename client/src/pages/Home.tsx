@@ -99,11 +99,11 @@ export default function Home() {
             </blockquote>
             <div className="grid grid-cols-2 gap-4 pt-4 text-xs font-bold uppercase tracking-wider text-[#2C402E]">
               <div className="p-3 border border-[#D1DDD8] bg-[#FDFDFB]">
-                <div className="text-[#D96C4A] text-xl font-serif font-bold mb-1">Old Goal</div>
+                <div className="text-[#D96C4A] text-xl font-serif font-bold mb-1">From</div>
                 Scale Productivity
               </div>
               <div className="p-3 border border-[#D1DDD8] bg-[#FDFDFB]">
-                <div className="text-[#2C402E] text-xl font-serif font-bold mb-1">New Goal</div>
+                <div className="text-[#2C402E] text-xl font-serif font-bold mb-1">To</div>
                 Collective Creativity
               </div>
             </div>
