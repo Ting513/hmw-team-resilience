@@ -16,7 +16,9 @@ import {
   Activity,
   Smile,
   AlertTriangle,
-  Award
+  Award,
+  Globe,
+  Gauge
 } from "lucide-react";
 
 export default function Home() {
@@ -48,7 +50,7 @@ export default function Home() {
             <button onClick={() => setActiveTab("hmw")} className={`hover:text-[#D96C4A] transition-colors ${activeTab === "hmw" ? "text-[#D96C4A] underline decoration-2 underline-offset-4" : "text-[#3A4F3C]"}`}>Refined HMW</button>
           </nav>
           <div className="flex gap-3">
-            <a href="manus-slides://5avzELx4HkHXSmEEtGtQfW" className="inline-flex items-center justify-center px-4 py-2 border border-[#2C402E] text-xs font-bold uppercase tracking-wider text-[#2C402E] hover:bg-[#2C402E] hover:text-[#FDFDFB] transition-all duration-200">
+            <a href="manus-slides://KJV1JbKhu4IYYCjzFV91d3" className="inline-flex items-center justify-center px-4 py-2 border border-[#2C402E] text-xs font-bold uppercase tracking-wider text-[#2C402E] hover:bg-[#2C402E] hover:text-[#FDFDFB] transition-all duration-200">
               View Slide Deck
             </a>
           </div>
@@ -70,7 +72,7 @@ export default function Home() {
             <div className="w-32 h-2 bg-[url('data:image/svg+xml,%3Csvg_xmlns=%22http://www.w3.org/2000/svg%22_width=%2220%22_height=%2210%22_viewBox=%220_0_20_10%22%3E%3Cpath_d=%22M0,5_C5,2_5,8_10,5_C15,2_15,8_20,5%22_fill=%22none%22_stroke=%22%23D96C4A%22_stroke-width=%222%22/%3E%3C/svg%3E')] bg-repeat-x"></div>
             
             <p className="text-lg lg:text-xl text-[#3A4F3C] leading-relaxed max-w-2xl font-light">
-              How do we scale productivity in the AI era without sacrificing humanity? This project explores the structural tensions of middle managers and individual contributors, shifting the goal from sheer operational output to a sustainable culture of <strong>creativity, collaboration, and trust</strong>.
+              How do we scale productivity in the AI era without sacrificing humanity? This project explores the structural tensions of middle managers caught in the "Manager Crunch", shifting the goal from sheer operational speed to a sustainable culture of <strong>creativity, collaboration, and trust</strong>.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Button onClick={() => setActiveTab("empathy")} className="bg-[#2C402E] text-[#FDFDFB] hover:bg-[#3D573F] px-6 py-6 text-sm font-bold uppercase tracking-wider transition-all duration-150">
@@ -92,7 +94,7 @@ export default function Home() {
                 "We need to remember we are solving not just for the manager but also the humans in the team... High performing teams are often differentiated by creativity, collaboration, and trust."
               </p>
               <footer className="text-xs font-bold uppercase tracking-wider text-[#D96C4A] flex items-center gap-2">
-                <span>— Project Mentor Feedback</span>
+                <span>— Himmat</span>
               </footer>
             </blockquote>
             <div className="grid grid-cols-2 gap-4 pt-4 text-xs font-bold uppercase tracking-wider text-[#2C402E]">
@@ -133,18 +135,18 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
               <div className="lg:col-span-8 space-y-6">
                 <h2 className="text-3xl lg:text-4xl font-serif font-bold text-[#2C402E]">
-                  Executive Summary: The Squeezed Manager & Stretched Team
+                  Executive Summary: Navigating the "Manager Crunch"
                 </h2>
                 <p className="text-base leading-relaxed">
-                  In today's rapidly flattening corporate landscapes, middle managers face an unprecedented "span of control" crisis. Following organizational restructurings, managers like our persona, <strong>Marcus Mark</strong>, are finding their teams ballooning from 5 to 30 people overnight. Concurrently, organizations are demanding rapid, unstructured AI adoption under escalating annual targets.
+                  Middle managers are the vital, yet often forgotten, connectors between strategy and execution. Today, they find themselves trapped in a structural <strong>"Manager Crunch"</strong> — squeezed from above by demands for rapid AI adoption and escalating targets, and squeezed from below by managing an unmanageable span of control (often ballooning from 5 to 30 people) and motivating an overwhelmed team.
                 </p>
                 <p className="text-base leading-relaxed">
-                  However, as our mentor wisely noted, solving this challenge requires looking beyond the manager's immediate operational bandwidth. The true performance layer of any team is the <strong>human beings who execute the work</strong>. High-performing teams are not built on transactional efficiency, but on <strong>psychological safety, mutual trust, and collective creativity</strong>.
+                  As our project mentor, <strong>Himmat</strong>, pointed out, solving this challenge requires a human-centered reframe. High-performing, resilient teams are not built on transactional speed or task throughput, but on <strong>psychological safety, mutual trust, and collective creativity</strong>. The observation journey must start with the individual team members who perform, rather than just the manager's administrative bottleneck.
                 </p>
                 <div className="p-6 bg-[#E8EDE7] border-l-4 border-[#2C402E] space-y-2">
                   <h4 className="font-serif font-bold text-lg text-[#2C402E]">The Core Thesis</h4>
                   <p className="text-sm leading-relaxed">
-                    We cannot solve the middle manager's scaling problem by forcing them to manage more. Instead, we must help them <strong>delegate authority</strong> and cultivate a <strong>self-organizing team culture</strong>. By using collaborative AI tools to offload administrative coordination, we can free up both manager and team bandwidth to reinvest in human relationships and collaborative innovation.
+                    We cannot solve the middle manager's scaling problem by forcing them to manage more. Instead, we must help them <strong>delegate authority</strong> and cultivate a <strong>self-organizing team culture</strong>. By using collaborative AI tools to offload administrative coordination, we can free up both manager and team bandwidth to reinvest in human relationships, trust, and collaborative innovation.
                   </p>
                 </div>
               </div>
@@ -267,13 +269,13 @@ export default function Home() {
                     <p><strong>Age:</strong> 35 years old</p>
                     <p><strong>Experience:</strong> 10+ years (Tech-adjacent)</p>
                     <p><strong>Location:</strong> Singapore</p>
-                    <p><strong>Span of Control:</strong> Expanded from 5 to 30 people</p>
+                    <p><strong>Span of Control:</strong> Expanded from 5 to 30 people (M3 to M1)</p>
                   </div>
                 </div>
                 <div className="lg:col-span-8 flex flex-col justify-center">
                   <Quote className="w-8 h-8 text-[#D96C4A] mb-2" />
                   <p className="font-serif italic text-xl text-[#2C402E] leading-relaxed">
-                    "I am an organizational shock absorber. I absorb pressure from above and below, but no one is absorbing mine. I fear a transition to an IC role is inevitable if I cannot scale."
+                    "I am an organizational shock absorber. Squeezed between delivering strategy, increasing AI adoption, and motivating an overwhelmed team. Expected to do more with less, but not always unempowered to make decisions."
                   </p>
                 </div>
               </div>
@@ -318,9 +320,10 @@ export default function Home() {
                 </div>
                 {selectedPersona === "manager" ? (
                   <ul className="space-y-4 text-sm leading-relaxed">
-                    <li>• "I don't have enough hours in the day to run 30 monthly 1-on-1s, let alone weekly check-ins."</li>
+                    <li>• "Managing is getting harder today."</li>
+                    <li>• "Managing across geographies is a challenge."</li>
+                    <li>• "I don't have enough hours in the day to run 30 monthly 1-on-1s, let alone coach my people."</li>
                     <li>• "We are told to adopt AI to save time, but learning these tools feels like another full-time job."</li>
-                    <li>• "I need to find a way to influence my peers and executives because I no longer have formal authority."</li>
                   </ul>
                 ) : (
                   <ul className="space-y-4 text-sm leading-relaxed">
@@ -345,9 +348,9 @@ export default function Home() {
                 </div>
                 {selectedPersona === "manager" ? (
                   <ul className="space-y-4 text-sm leading-relaxed">
-                    <li>• <strong>Worried:</strong> "If I cannot scale my management style, I will fail, and returning to an IC role is inevitable."</li>
-                    <li>• <strong>Excited:</strong> "If we can leverage AI coaching correctly, I might finally free up time to focus on strategic leadership."</li>
-                    <li>• <strong>Anxious:</strong> "Is my role becoming obsolete as organizations flatten and AI automates coordination?"</li>
+                    <li>• <strong>Worried about AI:</strong> "How will AI impact my or my team's roles? How do I keep my team engaged and safe when they are terrified of being replaced by the very AI agents I'm telling them to use?"</li>
+                    <li>• <strong>Worried about processes:</strong> "Will neat, highly structured processes make us easier to lay off? How do we improve data quality and show genuine value-add to our organization?"</li>
+                    <li>• <strong>Worried about partnership:</strong> "How do I convince the business to treat us as true strategic partners rather than just an execution engine?"</li>
                   </ul>
                 ) : (
                   <ul className="space-y-4 text-sm leading-relaxed">
@@ -372,9 +375,10 @@ export default function Home() {
                 </div>
                 {selectedPersona === "manager" ? (
                   <ul className="space-y-4 text-sm leading-relaxed">
-                    <li>• <strong>Administrative Babysitting:</strong> Spends up to 10 hours a week chasing status updates and manually tracking tasks across 30 people.</li>
-                    <li>• <strong>Workshop Attendance:</strong> Attends mandatory corporate AI workshops that focus on theory rather than practical, daily application.</li>
-                    <li>• <strong>Relationship Trade-offs:</strong> Frequently cancels or reschedules 1-on-1s due to constant operational fire-fighting.</li>
+                    <li>• <strong>Navigates Conflicting Pressures:</strong> Simultaneously manages expectations up (executives), down (direct reports), and across (peers).</li>
+                    <li>• <strong>High Communication & Adapting:</strong> Constantly adapts communication to different styles and regional team dynamics.</li>
+                    <li>• <strong>Deliberate Relationship Building:</strong> Explains logic behind work requested, connects on a personal level when work permits, and sets regular check-ins.</li>
+                    <li>• <strong>Administrative Overhead:</strong> Spends up to 10 hours a week chasing status updates and managing administrative "babysitting" across 30 people.</li>
                   </ul>
                 ) : (
                   <ul className="space-y-4 text-sm leading-relaxed">
@@ -399,9 +403,11 @@ export default function Home() {
                 </div>
                 {selectedPersona === "manager" ? (
                   <ul className="space-y-4 text-sm leading-relaxed">
-                    <li>• <strong>Isolated:</strong> Caught in the middle of executive Return-to-Office (RTO) mandates and his team's demands for remote flexibility.</li>
-                    <li>• <strong>Overwhelmed:</strong> Experiences chronic cognitive fatigue and a complete loss of personal work-life balance in Singapore.</li>
-                    <li>• <strong>Under-appreciated:</strong> Feels that his emotional labor and the effort required to keep the team cohesive are completely invisible to leadership.</li>
+                    <li>• <strong>The "Manager Crunch":</strong> Feels exhausted, squeezed, and structurally isolated as the "piggy in the middle" of the organization.</li>
+                    <li>• <strong>Under-resourced & Unempowered:</strong> Expected to do more with less, and not always empowered to make critical decisions.</li>
+                    <li>• <strong>Cognitive Fatigue:</strong> Exhausted by the high cognitive load of managing regular work, learning AI, and context-switching between human and AI modes.</li>
+                    <li>• <strong>Anxious about Metrics:</strong> Anxious about being judged on operational speed (task throughput) rather than creative quality.</li>
+                    <li>• <strong>Frustrated & Stressed:</strong> Frustrated when strategic experiments don't work out, yet feels constant stress to deliver regular results.</li>
                   </ul>
                 ) : (
                   <ul className="space-y-4 text-sm leading-relaxed">
@@ -426,9 +432,10 @@ export default function Home() {
                 </div>
                 {selectedPersona === "manager" ? (
                   <ul className="space-y-4 text-sm leading-relaxed">
+                    <li>• <strong>Value Mismatch:</strong> Disconnect between what they value personally (coaching and developing talent) and what the organization rewards (individual task output).</li>
+                    <li>• <strong>Data Quality Limits:</strong> Poor data quality limits deep analysis, forcing managers to spend hours fixing raw data rather than planning strategically.</li>
+                    <li>• <strong>Regional Capability Gaps:</strong> Staff in other geographic regions might be less capable or motivated, making cross-boundary management highly difficult.</li>
                     <li>• <strong>Unmanageable Span of Control:</strong> Managing 30 direct reports overnight with zero structural or administrative support.</li>
-                    <li>• <strong>The "Player-Coach" Fallacy:</strong> Expected to maintain high individual technical output while coaching a massive team.</li>
-                    <li>• <strong>AI Adoption Fatigue:</strong> Constant workshops without practical, daily application or structured learning pathways.</li>
                   </ul>
                 ) : (
                   <ul className="space-y-4 text-sm leading-relaxed">
@@ -449,9 +456,10 @@ export default function Home() {
                 </div>
                 {selectedPersona === "manager" ? (
                   <ul className="space-y-4 text-sm leading-relaxed">
-                    <li>• <strong>Strategic Leadership:</strong> Transitioning from a transactional task coordinator to an empathetic, strategic people leader.</li>
-                    <li>• <strong>Sustainable Productivity:</strong> Achieving team targets without relying on constant overtime or risking team burnout.</li>
-                    <li>• <strong>High-Trust Autonomy:</strong> Building a self-organizing team that operates effectively without constant supervision.</li>
+                    <li>• <strong>Recognition for Culture:</strong> Desires organizational appreciation and rewards for building resilient, high-performing, and creative team cultures, rather than just delivering immediate task output.</li>
+                    <li>• <strong>Job Stability:</strong> Long-term security in their role as strategic leaders rather than fearing layoffs due to automation or flattening.</li>
+                    <li>• <strong>Regular Growth & Learning:</strong> Access to structured, practical learning journeys to navigate AI-driven management and new ways of working.</li>
+                    <li>• <strong>Building a Good Team:</strong> Building a highly capable, self-organizing team that drives sustained, creative results.</li>
                   </ul>
                 ) : (
                   <ul className="space-y-4 text-sm leading-relaxed">
@@ -485,27 +493,19 @@ export default function Home() {
                 <div className="space-y-6">
                   {[
                     {
-                      q: "1. Tell me about a time your team was at its absolute best. What was your role in that moment?",
-                      intent: "Surfaces the manager's core leadership values, their definition of team success, and what triggers their professional pride."
-                    },
-                    {
-                      q: "2. How has your daily interaction with your team changed since your restructuring?",
+                      q: "1. Walk me through how your daily interaction with your team members has changed since your restructuring.",
                       intent: "Uncovers the direct impact of the expanded span of control on relationship quality, and maps where communication is breaking down."
                     },
                     {
-                      q: "3. Walk me through the last time you were asked to implement a new AI tool. What happened?",
-                      intent: "Identifies structural barriers to AI adoption, the presence or absence of structured support, and feelings of AI fatigue."
+                      q: "2. How do you keep your team engaged and feeling safe when they are terrified of being replaced by the very AI agents you're telling them to use?",
+                      intent: "Explores how managers navigate the psychological tension of pushing AI tools onto teams who fear those same tools will automate their roles."
                     },
                     {
-                      q: "4. What is the biggest barrier stopping you from being the leader you want to be?",
-                      intent: "Directly highlights systemic blockages, bandwidth constraints, and the emotional toll of the 'player-coach' dilemma."
+                      q: "3. What is the biggest barrier preventing you from moving from a 'task coordinator' to a 'people coach'?",
+                      intent: "Directly highlights systemic blockages, bandwidth constraints, and the emotional toll of the 'player-coach' dilemma and organizational reward systems."
                     },
                     {
-                      q: "5. How do you think your team members feel about the current pace and targets?",
-                      intent: "Measures the manager's empathy level and awareness of team burnout, revealing gaps between management and ground reality."
-                    },
-                    {
-                      q: "6. If you had 5 extra hours per week, what would you invest them in?",
+                      q: "4. If you had 5 extra hours per week, what would you invest them in?",
                       intent: "Surfaces unarticulated desires and high-value leadership activities that are currently being crowded out by administrative work."
                     }
                   ].map((item, idx) => (
@@ -526,28 +526,20 @@ export default function Home() {
                 <div className="space-y-6">
                   {[
                     {
-                      q: "1. What does a great day at work look like for you? Tell me about a recent moment you felt genuinely excited or proud.",
+                      q: "1. What does a great day at work look like for you? Tell me about a recent project where you felt genuinely excited to log in.",
                       intent: "Surfaces intrinsic motivators, moments of creative flow, and the baseline conditions required for individual thriving."
                     },
                     {
-                      q: "2. When you have a creative or unconventional idea, how do you share it? What usually happens next?",
+                      q: "2. When you have a creative or unconventional idea, how do you share it? What usually happens?",
                       intent: "Directly tests for psychological safety, checking if the team culture supports divergent thinking or punishes risk-taking."
                     },
                     {
-                      q: "3. Describe a recent time you felt overwhelmed. What support did you receive from your manager or peers?",
+                      q: "3. Describe a recent situation where you felt overwhelmed by your workload. What support did you receive?",
                       intent: "Uncovers the presence of a safety net, peer-to-peer collaboration, and whether the manager has bandwidth for support."
                     },
                     {
-                      q: "4. How has AI changed your daily work — has it given you more space to think, or has it just increased your task volume?",
+                      q: "4. How has the introduction of AI tools changed your daily work? Do you feel it has given you more space to think, or just more tasks to do?",
                       intent: "Identifies 'AI speedup' pressure, distinguishing between genuine cognitive offloading and transactional task amplification."
-                    },
-                    {
-                      q: "5. What does 'high performance' mean to you beyond hitting your numbers or targets?",
-                      intent: "Contrasts operational metrics with human capabilities like trust and creativity, revealing alignment with the team's mission."
-                    },
-                    {
-                      q: "6. What would make you feel truly proud of your team's work six months from now?",
-                      intent: "Surfaces long-term aspirations, developmental desires, and what kind of collective impact team members want to drive."
                     }
                   ].map((item, idx) => (
                     <div key={idx} className="border-b border-[#D1DDD8] pb-4 space-y-2">
@@ -617,11 +609,11 @@ export default function Home() {
                 <div className="space-y-4">
                   <h3 className="font-serif text-xl font-bold text-[#2C402E]">Sustainable Thriving</h3>
                   <p className="font-serif italic text-base text-[#3A4F3C] leading-relaxed">
-                    "How might we <span className="text-[#D96C4A] font-bold">support flattened teams</span> in navigating rapid AI adoption and escalating targets, so that they can <span className="text-[#D96C4A] font-bold">protect their wellbeing</span> while unlocking collaborative innovation?"
+                    "How might we <span className="text-[#D96C4A] font-bold">support flattened, geographically distributed teams</span> in navigating rapid AI adoption and escalating targets, so that they can <span className="text-[#D96C4A] font-bold">protect their wellbeing</span> while unlocking collaborative innovation?"
                   </p>
                 </div>
                 <div className="space-y-3 border-t border-[#D1DDD8] pt-4 text-xs">
-                  <p><strong>Who We Help:</strong> Flat organizational teams facing intense market pressure.</p>
+                  <p><strong>Who We Help:</strong> Flat, geographically distributed teams facing intense market pressure.</p>
                   <p><strong>What They Need to Do:</strong> Integrate AI tools and manage high workloads collectively.</p>
                   <p><strong>Desired Outcome:</strong> Break the link between productivity and burnout, fostering wellbeing.</p>
                 </div>
@@ -648,10 +640,10 @@ export default function Home() {
             <div className="border border-[#D1DDD8] bg-[#F6FAF5] p-8 space-y-6">
               <h3 className="font-serif text-2xl font-bold text-[#2C402E]">Why We Recommend Option 1</h3>
               <p className="text-base leading-relaxed">
-                Option 1 is the most comprehensive and robust pathway because it addresses the structural root cause of the crisis: the **unmanageable span of control**. 
+                Option 1 is the most comprehensive and robust pathway because it addresses the structural root cause of the crisis: the **unmanageable span of control** and the **Manager Crunch**. 
               </p>
               <p className="text-base leading-relaxed">
-                By shifting the manager's role from a **transactional task enforcer** to a **culture cultivator**, we allow the team to become **self-organizing**. This directly aligns with Google's Project Aristotle research, which proved that psychological safety and equal voice are the primary drivers of high performance. When team members have the autonomy to self-organize, they naturally unlock their collective creativity and collaboration, creating a resilient and sustainable high-performance culture that protects personal wellbeing.
+                By shifting the manager's role from a **transactional task enforcer** to a **culture cultivator**, we allow the team to become **self-organizing**. This directly aligns with Google's Project Aristotle research, which proved that psychological safety and equal voice are the primary drivers of high performance. When team members have the autonomy to self-organize, they naturally unlock their collective creativity and collaboration, creating a resilient and sustainable high-performance culture that protects personal wellbeing and addresses regional motivation gaps.
               </p>
             </div>
           </TabsContent>
@@ -663,25 +655,25 @@ export default function Home() {
       <footer className="border-t border-[#D1DDD8] bg-[#E8EDE7] py-12">
         <div className="container grid grid-cols-1 md:grid-cols-3 gap-8 text-xs">
           <div className="space-y-3">
-            <h4 className="font-serif font-bold text-sm text-[#2C402E]">TEAM RESILIENCE</h4>
+            <h4 className="font-serif font-bold text-sm text-[#2C402E]">Team Resilience</h4>
             <p className="text-[#3A4F3C]/80 leading-relaxed">
-              A design thinking project dedicated to redefining high performance, resilience, and human-centered collaboration in the AI era.
+              A design thinking project dedicated to redefining high-performance in the era of rapid flattening and AI integration.
             </p>
           </div>
           <div className="space-y-3">
-            <h4 className="font-serif font-bold text-sm text-[#2C402E]">RESEARCH ANCHORS</h4>
-            <p className="text-[#3A4F3C]/80 leading-relaxed">
-              Deloitte Human Capital Trends (2025/2026) &bull; McKinsey AI Workplace Reports (2025) &bull; Google Project Aristotle (2014) &bull; Employment Hero Singapore (2024)
-            </p>
+            <h4 className="font-serif font-bold text-sm text-[#2C402E]">Research References</h4>
+            <ul className="space-y-1 text-[#3A4F3C]/80">
+              <li>• Deloitte Global Human Capital Trends (2025)</li>
+              <li>• McKinsey Health Institute APAC Burnout Study (2022)</li>
+              <li>• Google Project Aristotle Team Research (2014)</li>
+              <li>• Employment Hero Singapore Burnout Report (2024)</li>
+            </ul>
           </div>
           <div className="space-y-3">
-            <h4 className="font-serif font-bold text-sm text-[#2C402E]">PROJECT LINKS</h4>
-            <div className="flex flex-col gap-2">
-              <a href="manus-slides://5avzELx4HkHXSmEEtGtQfW" className="hover:text-[#D96C4A] transition-colors font-bold uppercase tracking-wider">
-                &rarr; Open Presentation Slide Deck
-              </a>
-              <span className="text-[#3A4F3C]/60">Created with care by Middle Managers &bull; May 2026</span>
-            </div>
+            <h4 className="font-serif font-bold text-sm text-[#2C402E]">Project Mentor</h4>
+            <p className="text-[#3A4F3C]/80 leading-relaxed">
+              Himmat — Guiding the transition from operational excellence to human-centered creative thriving.
+            </p>
           </div>
         </div>
       </footer>
